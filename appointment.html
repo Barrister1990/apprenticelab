@@ -1,0 +1,381 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <!-- Meta Tag -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="copyright" content="apprenticelab" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Title -->
+    <title>Apprentice Lab || Appointment</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="css/nice-select.css" />
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- icofont CSS -->
+    <link rel="stylesheet" href="css/icofont.css" />
+    <!-- Slicknav -->
+    <link rel="stylesheet" href="css/slicknav.min.css" />
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="css/owl-carousel.css" />
+    <!-- Datepicker CSS -->
+    <link rel="stylesheet" href="css/datepicker.css" />
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+
+    <!-- Mediplus CSS -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- Color CSS -->
+    <link rel="stylesheet" href="css/color/color1.css" />
+
+    <link rel="stylesheet" id="colors" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+		<script type="text/javascript">
+			(function() {
+				// https://dashboard.emailjs.com/admin/account
+				emailjs.init({
+				  publicKey: "tBxOJLzoh_r8gBLZ2",
+				});
+			})();
+		</script>
+		 <script type="text/javascript">
+			window.onload = function() {
+				document.getElementById('contact-form').addEventListener('submit', function(event) {
+					event.preventDefault();
+					emailjs.sendForm('service_9otefbo', 'template_yggw6sv', this)
+						.then(() => {
+							console.log('SUCCESS!');
+						   
+							alert("Appointment Booked, Kindly check your email to continue")
+							document.getElementById("contact-form").reset();
+						}, (error) => {
+							console.log('FAILED...', error);
+							alert("Error Booking Appointment, Please try again in a few minutes")
+						});
+				});
+			}
+		</script>
+  </head>
+  <body>
+
+    <!-- End Preloader -->
+    <!-- Header Area -->
+    <header class="header" >
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-5 col-12">
+                        <!-- Contact -->
+                        <ul class="top-link">
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                        <!-- End Contact -->
+                    </div>
+                    <div class="col-lg-6 col-md-7 col-12">
+                        <!-- Top Contact -->
+                        <ul class="top-contact">
+                            <li><i class="fa fa-phone"></i>+1 469 604-1967</li>
+                            <li><i class="fa fa-envelope"></i><a href="mailto:support@yourmail.com">info@apprenticelabgh.com</a></li>
+                        </ul>
+                        <!-- End Top Contact -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Topbar -->
+        <!-- Header Inner -->
+        <div class="header-inner">
+            <div class="container">
+                <div class="inner">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-md-3 col-12">
+                            <!-- Start Logo -->
+                            <div class="logo">
+                                <a href="index.html"><img src="img/log.png" alt="#"></a>
+                            </div>
+                            <!-- End Logo -->
+                            <!-- Mobile Nav -->
+                            <div class="mobile-nav"></div>
+                            <!-- End Mobile Nav -->
+                        </div>
+                        <div class="col-lg-7 col-md-9 col-12">
+                            <!-- Main Menu -->
+                            <div class="main-menu">
+                                <nav class="navigation">
+                                    <ul class="nav menu">
+                                    <li class="active"><a href="index.html">Home</a></li>
+                                        <li><a href="service.html">Services </a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!--/ End Main Menu -->
+                        </div>
+                        <div class="col-lg-2 col-12">
+                            <div class="get-quote">
+                                <a href="appointment.html" class="btn">Book Appointment</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Header Inner -->
+    </header>
+    <!-- End Header Area -->
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs overlay">
+      <div class="container">
+        <div class="bread-inner">
+          <div class="row">
+            <div class="col-12">
+              <h2>Get Your Appointment</h2>
+              <ul class="bread-list">
+                <li><a href="index.html">Home</a></li>
+                <li><i class="icofont-simple-right"></i></li>
+                <li class="active">Appointment</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <!-- Start Appointment -->
+    <section class="appointment single-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12 col-12">
+                    <div class="appointment-inner">
+                        <div class="title">
+                            <h3>Book Your Appointment with Apprentice Lab</h3>
+                            <p>We will contact you within 2 hours.</p>
+                        </div>
+                        <form class="form" id="contact-form">
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<input name="name" type="text" placeholder="Your Name" id="name" />
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<input name="email" type="email" placeholder="Your Email" />
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<input name="phone" type="text" placeholder="Your Phone"  id="phone"/>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<input name="location" type="text" placeholder="Your Location"  id="location"/>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<!-- Hidden select to ensure form submission -->
+										<select name="service" class="form-control wide" style="display: none;">
+											<option value="Mobile App Development" selected>Mobile App Development</option>
+											<option value="Website Design">Website Design</option>
+											<option value="Software Development">Software Development</option>
+											<option value="UX/UI Design">UX/UI Design</option>
+											<option value="Training (Web & App Development)">Training (Web & App Development)</option>
+										</select>
+								
+										<!-- Nice-select dropdown for styling -->
+										<div class="nice-select form-control wide" tabindex="0">
+											<span class="current">Mobile App Development</span>
+											<ul class="list">
+												<li data-value="Mobile App Development" class="option selected">Mobile App Development</li>
+												<li data-value="Website Design" class="option">Website Design</li>
+												<li data-value="Software Development" class="option">Software Development</li>
+												<li data-value="UX/UI Design" class="option">UX/UI Design</li>
+												<li data-value="Training (Web & App Development)" class="option">Training (Web & App Development)</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-lg-12 col-md-12 col-12">
+									<div class="form-group">
+										<textarea name="message" placeholder="Tell us about your project or learning goals..."></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<div class="form-group">
+										<div class="button">
+											<button type="submit" class="btn">Book an Appointment</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <div class="work-hour">
+                        <h3>Our Working Hours</h3>
+                        <ul class="time-sidual">
+                            <li class="day">Monday - Sunday <span>9:00 AM - 6:00 PM</span></li>
+                         
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--/End Appointment -->
+
+    <!-- Footer Area -->
+    <footer id="footer" class="footer">
+        <!-- Footer Top -->
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="single-footer">
+                  <h2>About Apprentice Lab</h2>
+                  <p>At Apprentice Lab, we specialize in creating innovative software solutions and providing top-tier training in mobile app development, web development, and UX/UI design.</p>
+                  <!-- Social -->
+                  <ul class="social">
+                    
+                    <li><a href="https://www.facebook.com/share/T33SZ7oYUC96ZKA2/?mibextid=eQY6cl"><i class="icofont-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/apprentice_lab"><i class="icofont-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/apprenticelab"><i class="icofont-linkedin"></i></a></li>
+                  </ul>
+                  <!-- End Social -->
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="single-footer f-link">
+                  <h2>Quick Links</h2>
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <ul>
+                        <li><a href="index.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
+                        <li><a href="about.html"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
+                        <li><a href="service.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <ul>
+                        
+                        <li><a href="training.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Training</a></li>
+                        <li><a href="#testimonials"><i class="fa fa-caret-right" aria-hidden="true"></i>Testimonials</a></li>
+                        <li><a href="faq.html"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a></li>
+                        <li><a href="contact.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="single-footer">
+                  <h2>Business Hours</h2>
+                  <p>Our team is available during the following hours to assist you with any software development or training needs.</p>
+                  <ul class="time-sidual">
+                    <li class="day">Monday - Sunday <span>9:00 AM - 6:00 PM</span></li>
+                
+                  </ul>
+                </div>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+        <!-- End Footer Top -->
+      
+        <!-- Copyright -->
+        <div class="copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-12">
+                <div class="copyright-content">
+                    <p>© Copyright <span id="current-year"></span> | All Rights Reserved by Apprentice Lab</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Copyright -->
+        <script>
+            // Get the current year and set it in the span with id "current-year"
+            document.getElementById("current-year").textContent = new Date().getFullYear();
+          </script>
+      </footer>
+    <!--/ End Footer Area -->
+
+    <!-- jquery Min JS -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jquery Migrate JS -->
+    <script src="js/jquery-migrate.js"></script>
+    <!-- Easing JS -->
+    <script src="js/easing.js"></script>
+    <!-- Color JS -->
+    <script src="js/colors.js"></script>
+    <!-- Popper JS -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Bootstrap Datepicker JS -->
+    <script src="js/bootstrap-datepicker.js"></script>
+    <!-- Jquery Nav JS -->
+    <script src="js/jquery.nav.js"></script>
+    <!-- Slicknav JS -->
+    <script src="js/slicknav.min.js"></script>
+    <!-- ScrollUp JS -->
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <!-- Niceselect JS -->
+    <script src="js/niceselect.js"></script>
+    <!-- Tilt Jquery JS -->
+    <script src="js/tilt.jquery.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="js/owl-carousel.js"></script>
+    <!-- counterup JS -->
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <!-- Steller JS -->
+    <script src="js/steller.js"></script>
+    <!-- Wow JS -->
+    <script src="js/wow.min.js"></script>
+    <!-- Magnific Popup JS -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

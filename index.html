@@ -1,0 +1,1119 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Apprentice Lab offers innovative training in various tech fields. Join us today to unlock your potential!">
+    <meta name="keywords" content="Apprentice Lab, tech training, web development, mobile app development, ICT consultation">
+    <meta property="og:title" content="Apprentice Lab">
+    <meta property="og:description" content="Join Apprentice Lab to unlock your potential in tech fields such as web development, mobile app development, and more.">
+    <meta property="og:image" content="image/android-chrome-192x192.png">
+    <meta property="og:url" content="https://www.apprenticelabgh.com">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Title -->
+        <title>Apprentice Lab.</title>
+		
+		<!-- Favicon -->
+        <link rel="icon" href="img/favicon.ico">
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- Nice Select CSS -->
+		<link rel="stylesheet" href="css/nice-select.css">
+		<!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- icofont CSS -->
+        <link rel="stylesheet" href="css/icofont.css">
+		<!-- Slicknav -->
+		<link rel="stylesheet" href="css/slicknav.min.css">
+		<!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="css/owl-carousel.css">
+		<!-- Datepicker CSS -->
+		<link rel="stylesheet" href="css/datepicker.css">
+		<!-- Animate CSS -->
+        <link rel="stylesheet" href="css/animate.min.css">
+		<!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="css/magnific-popup.css">
+		
+		<!-- Medipro CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+		<script type="text/javascript">
+			(function() {
+				// https://dashboard.emailjs.com/admin/account
+				emailjs.init({
+				  publicKey: "tBxOJLzoh_r8gBLZ2",
+				});
+			})();
+		</script>
+		 <script type="text/javascript">
+			window.onload = function() {
+				document.getElementById('contact-form').addEventListener('submit', function(event) {
+					event.preventDefault();
+					emailjs.sendForm('service_9otefbo', 'template_yggw6sv', this)
+						.then(() => {
+							console.log('SUCCESS!');
+						   
+							alert("Appointment Booked, Kindly check your email to continue")
+							document.getElementById("contact-form").reset();
+						}, (error) => {
+							console.log('FAILED...', error);
+							alert("Error Booking Appointment, Please try again in a few minutes")
+						});
+				});
+			}
+		</script>
+		
+    </head>
+    <body>
+	
+		<!-- Preloader -->
+        <div class="preloader">
+            <div class="loader">
+                <div class="loader-outter"></div>
+                <div class="loader-inner"></div>
+
+                <div class="indicator"> 
+                    <svg width="16px" height="12px">
+                        <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                        <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- End Preloader -->
+		
+		<!-- Header Area -->
+		<header class="header" >
+			<!-- Topbar -->
+			<div class="topbar">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-md-5 col-12">
+							<!-- Contact -->
+							<ul class="top-link">
+								<li><a href="about.html">About</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="faq.html">FAQ</a></li>
+							</ul>
+							<!-- End Contact -->
+						</div>
+						<div class="col-lg-6 col-md-7 col-12">
+							<!-- Top Contact -->
+							<ul class="top-contact">
+								<li><i class="fa fa-phone"></i>+1 469 604-1967</li>
+								<li><i class="fa fa-envelope"></i><a href="mailto:info@apprenticelabgh.com">info@apprenticelabgh.com</a></li>
+							</ul>
+							<!-- End Top Contact -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Topbar -->
+			<!-- Header Inner -->
+			<div class="header-inner">
+				<div class="container">
+					<div class="inner">
+						<div class="row align-items-center">
+							<div class="col-lg-3 col-md-3 col-12">
+								<!-- Start Logo -->
+								<div class="logo">
+									<a href="index.html"><img src="img/log.png" alt="#"></a>
+								</div>
+								<!-- End Logo -->
+								<!-- Mobile Nav -->
+								<div class="mobile-nav"></div>
+								<!-- End Mobile Nav -->
+							</div>
+							<div class="col-lg-7 col-md-9 col-12">
+								<!-- Main Menu -->
+								<div class="main-menu">
+									<nav class="navigation">
+										<ul class="nav menu">
+										<li class="active"><a href="index.html">Home</a></li>
+											<li><a href="service.html">Services </a></li>
+											<li><a href="about.html">About Us</a></li>
+											<li><a href="contact.html">Contact Us</a></li>
+										</ul>
+									</nav>
+								</div>
+								<!--/ End Main Menu -->
+							</div>
+							<div class="col-lg-2 col-12">
+								<div class="get-quote">
+									<a href="appointment.html" class="btn">Book Appointment</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Header Inner -->
+		</header>
+		<!-- End Header Area -->
+		
+		<!-- Slider Area -->
+		<section class="slider">
+			<div class="hero-slider">
+				<!-- Start Single Slider -->
+				<div class="single-slider" style="background-image:url('img/am.png')">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7">
+								<div class="text">
+									<h1>We Build <span>Innovative</span> Digital Solutions You Can <span>Rely On!</span></h1>
+<p>At Apprentice Lab, we specialize in creating cutting-edge mobile apps, websites, and software tailored to your needs. Empower your business or skillset with our expert development and tuition services.</p>
+<div class="button">
+										<a href="appointment.html" class="btn">Get Appointment</a>
+										<a href="service.html" class="btn primary">Learn More</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Single Slider -->
+				<!-- Start Single Slider -->
+				<div class="single-slider" style="background-image:url('img/Background1.png')">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7">
+								<div class="text">
+									<h1>We Build <span>Innovative</span> Digital Solutions You Can <span>Rely On!</span></h1>
+<p>At Apprentice Lab, we specialize in creating cutting-edge mobile apps, websites, and software tailored to your needs. Empower your business or skillset with our expert development and tuition services.</p>
+	<div class="button">
+										<a href="appointment.html" class="btn">Get Appointment</a>
+										<a href="about.html" class="btn primary">About Us</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Start End Slider -->
+				<!-- Start Single Slider -->
+				<div class="single-slider" style="background-image:url('img/slider3.jpg')">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7">
+								<div class="text">
+									<h1>Learn <span>Coding</span> and Build <span>Your Future!</span></h1>
+<p>Join Apprentice Lab’s expert-led tuition programs in web development, mobile app creation, UX/UI design, and basic computing. Gain the skills you need to thrive in the tech industry.</p>
+<div class="button">
+										<a href="appointment.html" class="btn">Get Appointment</a>
+										<a href="contact.html" class="btn primary">Contact Now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Single Slider -->
+			</div>
+		</section>
+		<!--/ End Slider Area -->
+		
+		<!-- Start Schedule Area -->
+		<section class="schedule">
+			<div class="container">
+				<div class="schedule-inner">
+					<div class="row">
+						<div class="col-lg-4 col-md-6 col-12 ">
+							<!-- single-schedule -->
+							<div class="single-schedule first">
+								<div class="inner">
+									<div class="icon">
+										<i class="fa fa-laptop"></i>
+									</div>
+									<div class="single-content">
+										<span>Expert Training</span>
+<h4>Coding & Design Courses</h4>
+<p>Master web development, mobile app creation, and UX/UI design with our hands-on training programs. Empower your future in tech.</p>
+<a href="#">LEARN MORE <i class="fa fa-long-arrow-right"></i></a>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-12">
+							<!-- single-schedule -->
+							<div class="single-schedule middle">
+								<div class="inner">
+									<div class="icon">
+										<i class="icofont-prescription"></i>
+									</div>
+									<div class="single-content">
+										<span>Custom Solutions</span>
+<h4>Web & App Development</h4>
+<p>At Apprentice Lab, we specialize in creating tailored web and mobile app solutions for businesses. Let us help you bring your vision to life with innovative.</p>
+<a href="#">LEARN MORE <i class="fa fa-long-arrow-right"></i></a>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-12 col-12">
+							<!-- single-schedule -->
+							<div class="single-schedule last">
+								<div class="inner">
+									<div class="icon">
+										<i class="icofont-ui-clock"></i>
+									</div>
+									<div class="single-content">
+										<span>Our Availability</span>
+<h4>Working Hours</h4>
+<p>We are available to assist you Monday to Sunday from 9 AM to 6 PM. Get in touch with us during these hours for any inquiries or support.</p>
+<a href="#">CONTACT US <i class="fa fa-long-arrow-right"></i></a>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/End Start schedule Area -->
+
+		<!-- Start Feautes -->
+		<section class="Feautes section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>Our Process</h2>
+							<img src="img/section-img.png" alt="#">
+							<p>Turning Your Idea into Reality.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-12">
+						<!-- Start Single features -->
+						<div class="single-features">
+							<div class="signle-icon">
+								<i class="icofont icofont-light-bulb"></i>
+								
+							</div>
+							<h3>Step 1: Conceptualization</h3>
+							<p>We start by understanding your vision and objectives. Through brainstorming and research, we turn your idea into a clear, actionable plan.</p>
+						</div>
+						<!-- End Single features -->
+					</div>
+					<div class="col-lg-4 col-12">
+						<!-- Start Single features -->
+						<div class="single-features">
+							<div class="signle-icon">
+								<i class="icofont icofont-wrench"></i>
+							</div>
+							<h3>Step 2: Development</h3>
+							<p>Our expert team brings your idea to life by designing and developing custom mobile apps, websites, and software tailored to your needs.</p>
+						</div>
+						<!-- End Single features -->
+					</div>
+					<div class="col-lg-4 col-12">
+						<!-- Start Single features -->
+						<div class="single-features last">
+							<div class="signle-icon">
+								<i class="icofont icofont-rocket"></i>
+							</div>
+							<h3>Step 3: Launch & Support</h3>
+							<p>Once your solution is ready, we help with the launch and provide ongoing support to ensure everything runs smoothly and meets your goals.</p>
+						</div>
+						<!-- End Single features -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End Feautes -->
+		
+		<!-- Start Fun-facts -->
+		<div id="fun-facts" class="fun-facts section overlay">
+			<div class="container">
+			  <div class="row">
+				<div class="col-lg-3 col-md-6 col-12">
+				  <!-- Start Single Fun -->
+				  <div class="single-fun">
+					<i class="icofont icofont-laptop-alt"></i>
+					<div class="content">
+					  <span class="counter">120</span>
+					  <p>Software Developed</p>
+					</div>
+				  </div>
+				  <!-- End Single Fun -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+				  <!-- Start Single Fun -->
+				  <div class="single-fun">
+					<i class="icofont icofont-users-alt-5"></i>
+					<div class="content">
+					  <span class="counter">150</span>
+					  <p>Students Trained</p>
+					</div>
+				  </div>
+				  <!-- End Single Fun -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+				  <!-- Start Single Fun -->
+				  <div class="single-fun">
+					<i class="icofont-simple-smile"></i>
+					<div class="content">
+					  <span class="counter">146</span>
+					  <p>Happy Clients</p>
+					</div>
+				  </div>
+				  <!-- End Single Fun -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+				  <!-- Start Single Fun -->
+				  <div class="single-fun">
+					<i class="icofont icofont-flag-alt-2"></i>
+					<div class="content">
+					  <span class="counter">3</span>
+					  <p>Years in Business</p>
+					</div>
+				  </div>
+				  <!-- End Single Fun -->
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  
+		<!--/ End Fun-facts -->
+		
+		<!-- Start Why choose -->
+		<section class="why-choose section">
+			<div class="container">
+			  <div class="row">
+				<div class="col-lg-12">
+				  <div class="section-title">
+					<h2>Why Choose Apprentice Lab for Your Tech Needs?</h2>
+					<img src="img/section-img.png" alt="Apprentice Lab Services">
+					<p>At Apprentice Lab, we specialize in creating innovative mobile apps, websites, and software solutions while also offering expert training in web development, mobile app development, UX/UI design, and more.</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="row">
+				<div class="col-lg-6 col-12">
+				  <!-- Start Choose Left -->
+				  <div class="choose-left">
+					<h3>Who We Are</h3>
+					<p>Apprentice Lab is a leading software development company focused on building custom apps, websites, and training tech professionals. We empower businesses and individuals by providing high-quality tech solutions and training.</p>
+					<p>We are committed to turning your ideas into reality through innovative design, development, and training. Our team is passionate about solving real-world problems with technology.</p>
+					<div class="row">
+					  <div class="col-lg-6">
+						<ul class="list">
+						  <li><i class="fa fa-caret-right"></i>Custom mobile app and website development.</li>
+						  <li><i class="fa fa-caret-right"></i>Hands-on training in web development and UX/UI design.</li>
+						  <li><i class="fa fa-caret-right"></i>Focus on creating user-friendly, scalable solutions.</li>
+						</ul>
+					  </div>
+					  <div class="col-lg-6">
+						<ul class="list">
+						  <li><i class="fa fa-caret-right"></i>Industry-leading tools and technologies.</li>
+						  <li><i class="fa fa-caret-right"></i>Expert team with years of experience.</li>
+						  <li><i class="fa fa-caret-right"></i>Committed to providing long-term support and growth.</li>
+						</ul>
+					  </div>
+					</div>
+				  </div>
+				  <!-- End Choose Left -->
+				</div>
+				<div class="col-lg-6 col-12">
+				  <!-- Start Choose Rights -->
+				  <div class="choose-right">
+					<div class="video-image">
+					  <!-- Video Animation -->
+					  <div class="promo-video">
+						<div class="waves-block">
+						  <div class="waves wave-1"></div>
+						  <div class="waves wave-2"></div>
+						  <div class="waves wave-3"></div>
+						</div>
+					  </div>
+					  <!--/ End Video Animation -->
+					  <a href="" class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a>
+					</div>
+				  </div>
+				  <!-- End Choose Rights -->
+				</div>
+			  </div>
+			</div>
+		  </section>
+		  
+		<!--/ End Why choose -->
+		
+		<!-- Start Call to action -->
+		<section class="call-action overlay" data-stellar-background-ratio="0.5">
+			<div class="container">
+			  <div class="row">
+				<div class="col-lg-12 col-md-12 col-12">
+				  <div class="content">
+					<h2>Ready to Turn Your Idea into a Reality? Contact Apprentice Lab Today!</h2>
+					<p>Whether you need a custom mobile app, website, or tech training, our team at Apprentice Lab is here to bring your vision to life with innovative solutions and expert guidance.</p>
+					<div class="button">
+					  <a href="mailto:info@apprenticelabgh.com" class="btn">Contact Now</a>
+					  <a href="#service" class="btn second">Learn More<i class="fa fa-long-arrow-right"></i></a>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </section>
+		  
+		<!--/ End Call to action -->
+		
+		<!-- Start portfolio -->
+		<section class="portfolio section" >
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>Explore Our Portfolio of Successful Projects</h2>
+							<img src="img/section-img.png" alt="Apprentice Lab Portfolio">
+							<p>At Apprentice Lab, we are proud of the innovative mobile apps, websites, and software solutions we've delivered to clients. Take a look at our portfolio to see how we can turn your ideas into reality.</p>
+						  </div>						  
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12 col-12">
+						<div class="owl-carousel portfolio-slider">
+							<div class="single-pf">
+								<img src="img/temcot.PNG" alt="#">
+								<a href="temcot.html" class="btn">View Details</a>
+							</div>
+							<div class="single-pf">
+								<img src="img/Ts.PNG" alt="#">
+								<a href="temcot.html" class="btn">View Details</a>
+							</div>
+							<div class="single-pf">
+								<img src="img/jm.PNG" alt="#">
+								<a href="joymish.html" class="btn">View Details</a>
+							</div>
+							<div class="single-pf">
+								<img src="img/h2.PNG" alt="#">
+								<a href="hohoe.html" class="btn">View Details</a>
+							</div>
+							<div class="single-pf">
+								<img src="img/pbol.PNG" alt="#">
+								<a href="pbol.html" class="btn">View Details</a>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End portfolio -->
+		
+   <!-- Start service -->
+   <section class="services section" id="service">
+	<div class="container">
+	  <div class="row">
+		<div class="col-lg-12">
+		  <div class="section-title">
+			<h2>We Offer a Range of Services to Build Your Digital Future</h2>
+			<img src="img/section-img.png" alt="Apprentice Lab Services" />
+			<p>
+			  At Apprentice Lab, we specialize in custom mobile app development, website design, software solutions, and tech education. Explore our services to bring your ideas to life.
+			</p>
+		  </div>
+		</div>
+	  </div>
+	  <div class="row">
+		<div class="col-lg-4 col-md-6 col-12">
+		  <!-- Start Single Service -->
+		  <div class="single-service wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1s">
+			<i class="icofont icofont-mobile-phone"></i>
+			<h4><a href="mobile.html">Mobile App Development</a></h4>
+			<p>
+			  We develop intuitive and scalable mobile apps for iOS and Android, helping you reach a wider audience and enhance your business.
+			</p>
+		  </div>
+		  <!-- End Single Service -->
+		</div>
+		<div class="col-lg-4 col-md-6 col-12">
+		  <!-- Start Single Service -->
+		  <div class="single-service wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="1s">
+			<i class="icofont icofont-web-design"></i>
+			<h4><a href="Web.html">Website Design & Development</a></h4>
+			<p>
+			  We design and build custom websites that are both visually appealing and highly functional, tailored to your business needs.
+			</p>
+		  </div>
+		  <!-- End Single Service -->
+		</div>
+		<div class="col-lg-4 col-md-6 col-12">
+		  <!-- Start Single Service -->
+		  <div class="single-service wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="1s">
+			<i class="icofont icofont-code-alt"></i>
+			<h4><a href="software.html">Software Solutions</a></h4>
+			<p>
+			  We create custom software solutions that optimize business processes, streamline workflows, and enhance productivity.
+			</p>
+		  </div>
+		  <!-- End Single Service -->
+		</div>
+		<div class="col-lg-4 col-md-6 col-12">
+		  <!-- Start Single Service -->
+		  <div class="single-service wow fadeInUp" data-wow-delay="1s" data-wow-duration="1s">
+			<i class="icofont icofont-student"></i>
+			<h4><a href="training.html">Tech Education & Training</a></h4>
+			<p>
+			  We offer hands-on training in web development, mobile app development, UX/UI design, and basic computing to help you grow in the tech industry.
+			</p>
+		  </div>
+		  <!-- End Single Service -->
+		</div>
+		<div class="col-lg-4 col-md-6 col-12">
+		  <!-- Start Single Service -->
+		  <div class="single-service wow fadeInUp" data-wow-delay="1.2s" data-wow-duration="1s">
+			<i class="icofont icofont-bulb-alt"></i>
+			<h4><a href="software.html">Innovative Solutions</a></h4>
+			<p>
+			  We focus on creating innovative digital solutions that solve real-world problems, helping businesses stay ahead in a rapidly evolving market.
+			</p>
+		  </div>
+		  <!-- End Single Service -->
+		</div>
+		<div class="col-lg-4 col-md-6 col-12">
+		  <!-- Start Single Service -->
+		  <div class="single-service wow fadeInUp" data-wow-delay="1.4s" data-wow-duration="1s">
+			<i class="icofont icofont-support"></i>
+			<h4><a href="software.html">Ongoing Support</a></h4>
+			<p>
+			  We offer ongoing support and maintenance for all our products, ensuring everything runs smoothly and continues to meet your business needs.
+			</p>
+		  </div>
+		  <!-- End Single Service -->
+		</div>
+	  </div>
+	</div>
+  </section>
+  
+  <!--/ End service -->
+  <section class="section testimonials overlay" data-stellar-background-ratio="0.5" id="testimonials">
+	<div class="container">
+	  <div class="row">
+		<div class="col-lg-12">
+		  <div class="section-title">
+			<h2>What Our Clients Say About Our Web & App Development Services</h2>
+			<img src="img/section-img2.png" alt="#" />
+		  </div>
+		</div>
+	  </div>
+	  <div class="row">
+		<div class="col-lg-12 col-12">
+		  <div class="owl-carousel testimonial-slider">
+			<!-- Start Single Testimonial -->
+			<div class="single-testimonial">
+			 
+			  <p>
+				"Apprentice Lab helped bring my app idea to life with exceptional attention to detail and on-time delivery. Their team was easy to work with and delivered a solution that exceeded my expectations."
+			  </p>
+			  <h4 class="name">Pastor Bajamin Essien</h4>
+			  <p class="profession">Founder of Dweller Gold  Worldwide</p>
+			</div>
+			<!-- End Single Testimonial -->
+  
+			<!-- Start Single Testimonial -->
+			<div class="single-testimonial">
+			  
+			  <p>
+				"The team at Apprentice Lab is highly skilled, and their training services in app development helped me understand the process from start to finish. I now have the confidence to manage my own projects."
+			  </p>
+			  <h4 class="name">Eric Odoom</h4>
+			  <p class="profession">UX/UI Designer</p>
+			</div>
+			<!-- End Single Testimonial -->
+  
+			<!-- Start Single Testimonial -->
+			<div class="single-testimonial">
+		
+			  <p>
+				"Apprentice Lab’s mobile app development service has been invaluable. We were able to develop a highly functional app that improved our business operations and customer satisfaction."
+			  </p>
+			  <h4 class="name">Elizabeth Hartman</h4>
+			  <p class="profession">CEO, Joymish</p>
+			</div>
+			<!-- End Single Testimonial -->
+  
+			<!-- Start Single Testimonial -->
+			<div class="single-testimonial">
+			 
+			  <p>
+				"The team delivered an outstanding website for our company, providing excellent functionality and user experience. We’ve seen an increase in customer engagement thanks to their expertise."
+			  </p>
+			  <h4 class="name">Mr Yaw Owusu Boakye</h4>
+			  <p class="profession">Director, Temcot Schools</p>
+			</div>
+			<!-- End Single Testimonial -->
+  
+			<!-- Start Single Testimonial -->
+			<div class="single-testimonial">
+			  <img src="img/testi2.png" alt="#" />
+			  <p>
+				"Apprentice Lab provided me with the knowledge and tools to launch my own mobile app. Their coding tuition was top-notch, and I learned a lot from their experienced team."
+			  </p>
+			  <h4 class="name">Hoffman Agyei</h4>
+			  <p class="profession">Aspiring Developer</p>
+			</div>
+			<!-- End Single Testimonial -->
+  
+			<!-- Start Single Testimonial -->
+			<div class="single-testimonial">
+			  <img src="img/testi3.png" alt="#" />
+			  <p>
+				"We entrusted Apprentice Lab to handle the app development for our organization, and they delivered a product that met all our requirements. Their professionalism and technical expertise were impressive."
+			  </p>
+			  <h4 class="name">David Brown</h4>
+			  <p class="profession">Project Manager, FinTech Solutions</p>
+			</div>
+			<!-- End Single Testimonial -->
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+  
+	  <!--/ End Testimonials -->
+
+	    <!-- Start Departments -->
+		<section class="departments section">
+			<div class="container">
+			  <div class="row">
+				<div class="col-lg-12">
+				  <div class="section-title">
+					<h2>We Offer Different Services To Empower Your Tech Journey</h2>
+					<img src="img/section-img.png" alt="#" />
+				  </div>
+				</div>
+			  </div>
+			  <div class="row">
+				<div class="col-12">
+				  <div class="department-tab tab-menu">
+					<!-- Tab Menu -->
+					<div class="list-group nav nav-tabs" id="list-tab" role="tablist">
+					  <a class="list-group-item nav-item active" data-bs-toggle="list" href="#tab1" role="tab">
+						<i class="icofont-laptop"></i><span class="first">Mobile App</span><span class="second">Learn and Build</span>
+					  </a>
+					  <a class="list-group-item" data-bs-toggle="list" href="#tab2" role="tab">
+						<i class="icofont-code"></i><span class="first">Website</span><span class="second">Master the Web</span>
+					  </a>
+					  <a class="list-group-item" data-bs-toggle="list" href="#tab3" role="tab">
+						<i class="icofont-pencil-alt-2"></i><span class="first">Design</span><span class="second">Create Stunning Interfaces</span>
+					  </a>
+					  <a class="list-group-item" data-bs-toggle="list" href="#tab4" role="tab">
+						<i class="icofont-users-alt-2"></i><span class="first">Training</span><span class="second">Upskill Your Team</span>
+					  </a>
+					  <a class="list-group-item" data-bs-toggle="list" href="#tab5" role="tab">
+						<i class="icofont-businessman"></i><span class="first">Consulting</span><span class="second">Tailored Solutions</span>
+					  </a>
+					</div>
+					<!-- Tab Details -->
+					<div class="tab-details">
+					  <div class="tab-content" id="nav-tabContent">
+						<!-- Tab One -->
+						<div class="tab-pane fade show active" id="tab1" role="tabpanel">
+						  <div class="row">
+							<div class="col-lg-6">
+							  <div class="department-left">
+								<h3>Mobile App Development</h3>
+								<p class="p1">"Build powerful, scalable mobile applications for Android and iOS."</p>
+								<p>Learn how to create cross-platform apps using React Native, Flutter, or native technologies. Our instructors will guide you through the process of developing full-fledged apps for both platforms.</p>
+								<ul class="list">
+								  <li><i class="fa fa-check"></i>Master React Native and Flutter</li>
+								  <li><i class="fa fa-check"></i>Develop mobile apps from scratch</li>
+								  <li><i class="fa fa-check"></i>Publish to app stores</li>
+								</ul>
+							  </div>
+							</div>
+							<div class="col-lg-6">
+							  <div class="department-right">
+								<img src="img/mobile-app-development.png" alt="#" />
+							  </div>
+							</div>
+						  </div>
+						</div>
+						<!-- Tab Two -->
+						<div class="tab-pane fade" id="tab2" role="tabpanel">
+						  <div class="row">
+							<div class="col-lg-6">
+							  <div class="department-left">
+								<h3>Web Development</h3>
+								<p class="p1">"Learn how to build modern, responsive websites using the latest technologies."</p>
+								<p>Become proficient in HTML, CSS, JavaScript, and frameworks like React.js and Next.js. Our hands-on training will ensure you understand the ins and outs of building fast, scalable websites.</p>
+								<ul class="list">
+								  <li><i class="fa fa-check"></i>Learn HTML, CSS, and JavaScript</li>
+								  <li><i class="fa fa-check"></i>Master React.js and Next.js</li>
+								  <li><i class="fa fa-check"></i>Optimize for speed and scalability</li>
+								</ul>
+							  </div>
+							</div>
+							<div class="col-lg-6">
+							  <div class="department-right">
+								<img src="img/web-development.png" alt="#" />
+							  </div>
+							</div>
+						  </div>
+						</div>
+		  
+						<!-- Tab Three -->
+						<div class="tab-pane fade" id="tab3" role="tabpanel">
+						  <div class="row">
+							<div class="col-lg-6">
+							  <div class="department-left">
+								<h3>UX/UI Design</h3>
+								<p class="p1">"Design beautiful and intuitive user experiences for web and mobile applications."</p>
+								<p>Learn to craft user interfaces that are visually appealing and user-friendly. We'll guide you through the design process, from wireframes to high-fidelity mockups using tools like Figma and Adobe XD.</p>
+								<ul class="list">
+								  <li><i class="fa fa-check"></i>Master Figma, Adobe XD, and Sketch</li>
+								  <li><i class="fa fa-check"></i>Create user-centric designs</li>
+								  <li><i class="fa fa-check"></i>Prototyping and usability testing</li>
+								</ul>
+							  </div>
+							</div>
+							<div class="col-lg-6">
+							  <div class="department-right">
+								<img src="img/ux-ui-design.png" alt="#" />
+							  </div>
+							</div>
+						  </div>
+						</div>
+		  
+						<!-- Tab Four -->
+						<div class="tab-pane fade" id="tab4" role="tabpanel">
+						  <div class="row">
+							<div class="col-lg-6">
+							  <div class="department-left">
+								<h3>Tech Training</h3>
+								<p class="p1">"Upskill your team with in-depth tech training to stay ahead in the industry."</p>
+								<p>We offer tailored training sessions in web development, mobile app development, UX/UI design, and more. Equip your team with the tools they need to innovate and excel.</p>
+								<ul class="list">
+								  <li><i class="fa fa-check"></i>Custom training for teams</li>
+								  <li><i class="fa fa-check"></i>Hands-on learning experience</li>
+								  <li><i class="fa fa-check"></i>Mentorship from industry experts</li>
+								</ul>
+							  </div>
+							</div>
+							<div class="col-lg-6">
+							  <div class="department-right">
+								<img src="img/tech-training.png" alt="#" />
+							  </div>
+							</div>
+						  </div>
+						</div>
+		  
+						<!-- Tab Five -->
+						<div class="tab-pane fade" id="tab5" role="tabpanel">
+						  <div class="row">
+							<div class="col-lg-6">
+							  <div class="department-left">
+								<h3>Software Consulting</h3>
+								<p class="p1">"Get expert advice and solutions tailored to your business needs."</p>
+								<p>Our consulting services help businesses identify the right software solutions to improve efficiency and drive growth. Whether you need custom software or need guidance on selecting the right tech stack, we’re here to help.</p>
+								<ul class="list">
+								  <li><i class="fa fa-check"></i>Custom software solutions</li>
+								  <li><i class="fa fa-check"></i>Tech stack recommendations</li>
+								  <li><i class="fa fa-check"></i>Ongoing support and maintenance</li>
+								</ul>
+							  </div>
+							</div>
+							<div class="col-lg-6">
+							  <div class="department-right">
+								<img src="img/software-consulting.png" alt="#" />
+							  </div>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+					<!-- End Tab Details -->
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </section>
+		  
+		  <!-- End Departments -->
+    <!-- Start Team -->
+	<section
+	id="team"
+	class="team section overlay"
+	data-stellar-background-ratio="0.5"
+  >
+	<div class="container">
+	  <div class="row justify-content-center">
+		<div class="col-lg-12">
+		  <div class="section-title text-center">
+			<h2>Meet Our Talented Team</h2>
+			<img src="img/section-img2.png" alt="#" />
+			<p>
+			  At Apprentice Lab, we have a dedicated team working tirelessly to create innovative software solutions and teach the next generation of developers.
+			</p>
+		  </div>
+		</div>
+	  </div>
+	  <div class="row justify-content-center">
+		<!-- Founder and CEO -->
+		<div class="col-lg-3 col-md-6 col-12" data-tilt>
+		  <div class="single-team wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1s">
+			<div class="t-head">
+			  <img src="img/COE.jpg" alt="#" />
+			 
+			</div>
+			<div class="t-bottom">
+			  <p>Founder and CEO</p>
+			  <h2><a href="https://www.linkedin.com/in/derrick-yeboah-b7860327b/">Derrick Yeboah</a></h2>
+			</div>
+		  </div>
+		</div>
+		<!-- Co-founder and Full Stack Developer -->
+		<div class="col-lg-3 col-md-6 col-12" data-tilt>
+		  <div class="single-team wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="1s">
+			<div class="t-head">
+			  <img src="img/Me.jpg" alt="#" />
+			</div>
+			<div class="t-bottom">
+			  <p>Co-founder and Full Stack Developer</p>
+			  <h2><a href="https://www.linkedin.com/in/charles-awuku-385b93242/">Charles Awuku</a></h2>
+			</div>
+		  </div>
+		</div>
+		<!-- Administrator -->
+		<div class="col-lg-3 col-md-6 col-12" data-tilt>
+		  <div class="single-team wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="1s">
+			<div class="t-head">
+			  <img src="img/madam.jpg" alt="#" />
+			 
+			</div>
+			<div class="t-bottom">
+			  <p>Administrator</p>
+			  <h2><a href="https://www.linkedin.com/in/joyce-adzokatse-132a41241/">Joyce Adzokatse</a></h2>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+  
+		<!-- Start Appointment -->
+		<section class="appointment">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>We Are Always Ready to Help You. Book an Appointment with Apprentice Lab</h2>
+							<img src="img/section-img.png" alt="Apprentice Lab Logo">
+							<p>At Apprentice Lab, we specialize in mobile app development, website design, and software solutions. Book a session with us to discuss your project or start your learning journey!</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 col-md-12 col-12">
+						<form class="form" id="contact-form">
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<input name="name" type="text" placeholder="Your Name" id="name" />
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<input name="email" type="email" placeholder="Your Email" />
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<input name="phone" type="text" placeholder="Your Phone"  id="phone"/>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<input name="location" type="text" placeholder="Your Location"  id="location"/>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<!-- Hidden select to ensure form submission -->
+										<select name="service" class="form-control wide" style="display: none;">
+											<option value="Mobile App Development" selected>Mobile App Development</option>
+											<option value="Website Design">Website Design</option>
+											<option value="Software Development">Software Development</option>
+											<option value="UX/UI Design">UX/UI Design</option>
+											<option value="Training (Web & App Development)">Training (Web & App Development)</option>
+										</select>
+								
+										<!-- Nice-select dropdown for styling -->
+										<div class="nice-select form-control wide" tabindex="0">
+											<span class="current">Mobile App Development</span>
+											<ul class="list">
+												<li data-value="Mobile App Development" class="option selected">Mobile App Development</li>
+												<li data-value="Website Design" class="option">Website Design</li>
+												<li data-value="Software Development" class="option">Software Development</li>
+												<li data-value="UX/UI Design" class="option">UX/UI Design</li>
+												<li data-value="Training (Web & App Development)" class="option">Training (Web & App Development)</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-lg-12 col-md-12 col-12">
+									<div class="form-group">
+										<textarea name="message" placeholder="Tell us about your project or learning goals..."></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<div class="form-group">
+										<div class="button">
+											<button type="submit" class="btn">Book an Appointment</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-lg-6 col-md-12">
+						<div class="appointment-image">
+							<img src="img/contact-img.png" alt="Apprentice Lab Services">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- End Appointment -->
+		<!-- Footer Area -->
+		<footer id="footer" class="footer">
+			<!-- Footer Top -->
+			<div class="footer-top">
+			  <div class="container">
+				<div class="row">
+				  <div class="col-lg-3 col-md-6 col-12">
+					<div class="single-footer">
+					  <h2>About Apprentice Lab</h2>
+					  <p>At Apprentice Lab, we specialize in creating innovative software solutions and providing top-tier training in mobile app development, web development, and UX/UI design.</p>
+					  <!-- Social -->
+					  <ul class="social">
+						
+						<li><a href="https://www.facebook.com/share/T33SZ7oYUC96ZKA2/?mibextid=eQY6cl"><i class="icofont-facebook"></i></a></li>
+						<li><a href="https://twitter.com/apprentice_lab"><i class="icofont-twitter"></i></a></li>
+						<li><a href="https://www.linkedin.com/company/apprenticelab"><i class="icofont-linkedin"></i></a></li>
+					  </ul>
+					  <!-- End Social -->
+					</div>
+				  </div>
+				  <div class="col-lg-3 col-md-6 col-12">
+					<div class="single-footer f-link">
+					  <h2>Quick Links</h2>
+					  <div class="row">
+						<div class="col-lg-6 col-md-6 col-12">
+						  <ul>
+							<li><a href="index.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
+							<li><a href="about.html"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
+							<li><a href="service.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a></li>
+						  </ul>
+						</div>
+						<div class="col-lg-6 col-md-6 col-12">
+						  <ul>
+							
+							<li><a href="training.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Training</a></li>
+							<li><a href="#testimonials"><i class="fa fa-caret-right" aria-hidden="true"></i>Testimonials</a></li>
+							<li><a href="faq.html"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a></li>
+							<li><a href="contact.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>
+						  </ul>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <div class="col-lg-3 col-md-6 col-12">
+					<div class="single-footer">
+					  <h2>Business Hours</h2>
+					  <p>Our team is available during the following hours to assist you with any software development or training needs.</p>
+					  <ul class="time-sidual">
+						<li class="day">Monday - Sunday <span>9:00 AM - 6:00 PM</span></li>
+					
+					  </ul>
+					</div>
+				  </div>
+			
+				</div>
+			  </div>
+			</div>
+			<!-- End Footer Top -->
+		  
+			<!-- Copyright -->
+			<div class="copyright">
+			  <div class="container">
+				<div class="row">
+				  <div class="col-lg-12 col-md-12 col-12">
+					<div class="copyright-content">
+						<p>© Copyright <span id="current-year"></span> | All Rights Reserved by Apprentice Lab</p>
+					  </div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<!-- End Copyright -->
+			<script>
+				// Get the current year and set it in the span with id "current-year"
+				document.getElementById("current-year").textContent = new Date().getFullYear();
+			  </script>
+		  </footer>
+		  
+		<!--/ End Footer Area -->
+		
+		<!-- jquery Min JS -->
+        <script src="js/jquery.min.js"></script>
+		<!-- jquery Migrate JS -->
+		<script src="js/jquery-migrate.js"></script>
+		<!-- jquery Ui JS -->
+		<script src="js/jquery-ui.min.js"></script>
+		<!-- Easing JS -->
+        <script src="js/easing.js"></script>
+		<!-- Color JS -->
+		<script src="js/colors.js"></script>
+		<!-- Popper JS -->
+		<script src="js/popper.min.js"></script>
+		<!-- Bootstrap Datepicker JS -->
+		<script src="js/bootstrap-datepicker.js"></script>
+		<!-- Jquery Nav JS -->
+        <script src="js/jquery.nav.js"></script>
+		<!-- Slicknav JS -->
+		<script src="js/slicknav.min.js"></script>
+		<!-- ScrollUp JS -->
+        <script src="js/jquery.scrollUp.min.js"></script>
+		<!-- Niceselect JS -->
+		<script src="js/niceselect.js"></script>
+		<!-- Tilt Jquery JS -->
+		<script src="js/tilt.jquery.min.js"></script>
+		<!-- Owl Carousel JS -->
+        <script src="js/owl-carousel.js"></script>
+		<!-- counterup JS -->
+		<script src="js/jquery.counterup.min.js"></script>
+		<!-- Steller JS -->
+		<script src="js/steller.js"></script>
+		<!-- Wow JS -->
+		<script src="js/wow.min.js"></script>
+		<!-- Magnific Popup JS -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<!-- Counter Up CDN JS -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Main JS -->
+		<script src="js/main.js"></script>
+    </body>
+</html>
