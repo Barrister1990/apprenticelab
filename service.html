@@ -1,87 +1,73 @@
 
 <!DOCTYPE html>
 <html lang="zxx">
-  <head>
-    <!-- Meta Tag -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="copyright" content="pavilan" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="author" content="Apprentice Lab" />
+  <meta name="description" content="Explore our wide range of digital services including web development, mobile app creation, software consulting, and ICT training tailored for businesses and individuals." />
+  <meta name="keywords" content="Apprentice Lab services, software development, web design, app development, ICT training, tech services in Frisco" />
+  <meta name="copyright" content="Apprentice Lab" />
 
-    <!-- Title -->
-    <title>Apprentice Lab || Service</title>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Our Services | Apprentice Lab" />
+  <meta property="og:description" content="Discover digital solutions and tech training tailored for your needs. Learn more about our services at Apprentice Lab." />
+  <meta property="og:image" content="https://www.apprenticelabgh.com/img/android-chrome-192x192.png" />
+  <meta property="og:url" content="https://www.apprenticelabgh.com/services.html" />
+  <meta property="og:type" content="website" />
 
-    <!-- Favicon -->
-    <link rel="icon" href="img/favicon.ico">
+  <!-- Title -->
+  <title>Our Services | Apprentice Lab</title>
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.ico" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- Nice Select CSS -->
-    <link rel="stylesheet" href="css/nice-select.css" />
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <!-- icofont CSS -->
-    <link rel="stylesheet" href="css/icofont.css" />
-    <!-- Slicknav -->
-    <link rel="stylesheet" href="css/slicknav.min.css" />
-    <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="css/owl-carousel.css" />
-    <!-- Datepicker CSS -->
-    <link rel="stylesheet" href="css/datepicker.css" />
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="css/animate.min.css" />
-    <!-- Magnific Popup CSS -->
-    <link rel="stylesheet" href="css/magnific-popup.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet" />
 
-    <!-- Mediplus CSS -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/nice-select.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/icofont.css" />
+  <link rel="stylesheet" href="css/slicknav.min.css" />
+  <link rel="stylesheet" href="css/owl-carousel.css" />
+  <link rel="stylesheet" href="css/datepicker.css" />
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <link rel="stylesheet" href="css/magnific-popup.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/color/color1.css" />
 
-    <!-- Color CSS -->
-    <link rel="stylesheet" href="css/color/color1.css" />
+  <!-- EmailJS Integration -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init({ publicKey: "tBxOJLzoh_r8gBLZ2" });
+    })();
 
-    <link rel="stylesheet" id="colors" />
+    window.onload = function () {
+      const form = document.getElementById("contact-form");
+      if (form) {
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+          emailjs.sendForm('service_9otefbo', 'template_yggw6sv', this)
+            .then(() => {
+              alert("Appointment Booked! Kindly check your email to continue.");
+              form.reset();
+            }, (error) => {
+              alert("Error booking appointment. Please try again in a few minutes.");
+              console.error("EmailJS Error:", error);
+            });
+        });
+      }
+    };
+  </script>
+</head>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  
-		<script type="text/javascript">
-			(function() {
-				// https://dashboard.emailjs.com/admin/account
-				emailjs.init({
-				  publicKey: "tBxOJLzoh_r8gBLZ2",
-				});
-			})();
-		</script>
-		 <script type="text/javascript">
-			window.onload = function() {
-				document.getElementById('contact-form').addEventListener('submit', function(event) {
-					event.preventDefault();
-					emailjs.sendForm('service_9otefbo', 'template_yggw6sv', this)
-						.then(() => {
-							console.log('SUCCESS!');
-						   
-							alert("Appointment Booked, Kindly check your email to continue")
-							document.getElementById("contact-form").reset();
-						}, (error) => {
-							console.log('FAILED...', error);
-							alert("Error Booking Appointment, Please try again in a few minutes")
-						});
-				});
-			}
-		</script>
-
-  </head>
   <body>
 
 
@@ -106,7 +92,7 @@
                         <!-- Top Contact -->
                         <ul class="top-contact">
                             <li><i class="fa fa-phone"></i>+1 469 604-1967</li>
-                            <li><i class="fa fa-envelope"></i><a href="mailto:info@apprenticelabgh.com">info@apprenticelabgh.com</a></li>
+                           <li><i class="fa fa-envelope"></i><a href="mailto:info@apprenticelabgh.com">info@apprenticelabgh.com</a></li>
                         </ul>
                         <!-- End Top Contact -->
                     </div>
@@ -122,7 +108,7 @@
                         <div class="col-lg-3 col-md-3 col-12">
                             <!-- Start Logo -->
                             <div class="logo">
-                                <a href="index.html"><img src="img/log.png" alt="#"></a>
+                                <a href="index.html"><img src="img/log.png" alt="apprentice lab logo"></a>
                             </div>
                             <!-- End Logo -->
                             <!-- Mobile Nav -->
@@ -194,7 +180,7 @@
               <!-- Start Single Service -->
               <div class="single-service wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1s">
                 <i class="icofont icofont-mobile-phone"></i>
-                <h4><a href="mobile.html">Mobile App Development</a></h4>
+                <h4><a href="mobile-app-development.html">Mobile App Development</a></h4>
                 <p>
                   We develop intuitive and scalable mobile apps for iOS and Android, helping you reach a wider audience and enhance your business.
                 </p>
@@ -205,7 +191,7 @@
               <!-- Start Single Service -->
               <div class="single-service wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="1s">
                 <i class="icofont icofont-web-design"></i>
-                <h4><a href="Web.html">Website Design & Development</a></h4>
+                <h4><a href="website-development.html">Website Design & Development</a></h4>
                 <p>
                   We design and build custom websites that are both visually appealing and highly functional, tailored to your business needs.
                 </p>
@@ -216,7 +202,7 @@
               <!-- Start Single Service -->
               <div class="single-service wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="1s">
                 <i class="icofont icofont-code-alt"></i>
-                <h4><a href="software.html">Software Solutions</a></h4>
+                <h4><a href="software-solutions.html">Software Solutions</a></h4>
                 <p>
                   We create custom software solutions that optimize business processes, streamline workflows, and enhance productivity.
                 </p>
@@ -227,7 +213,7 @@
               <!-- Start Single Service -->
               <div class="single-service wow fadeInUp" data-wow-delay="1s" data-wow-duration="1s">
                 <i class="icofont icofont-student"></i>
-                <h4><a href="training.html">Tech Education & Training</a></h4>
+                <h4><a href="training-program.html">Tech Education & Training</a></h4>
                 <p>
                   We offer hands-on training in web development, mobile app development, UX/UI design, and basic computing to help you grow in the tech industry.
                 </p>
@@ -238,7 +224,7 @@
               <!-- Start Single Service -->
               <div class="single-service wow fadeInUp" data-wow-delay="1.2s" data-wow-duration="1s">
                 <i class="icofont icofont-bulb-alt"></i>
-                <h4><a href="software.html">Innovative Solutions</a></h4>
+                <h4><a href="software-solutions.html">Innovative Solutions</a></h4>
                 <p>
                   We focus on creating innovative digital solutions that solve real-world problems, helping businesses stay ahead in a rapidly evolving market.
                 </p>
@@ -249,7 +235,7 @@
               <!-- Start Single Service -->
               <div class="single-service wow fadeInUp" data-wow-delay="1.4s" data-wow-duration="1s">
                 <i class="icofont icofont-support"></i>
-                <h4><a href="software.html">Ongoing Support</a></h4>
+                <h4><a href="software-solutions.html">Ongoing Support</a></h4>
                 <p>
                   We offer ongoing support and maintenance for all our products, ensuring everything runs smoothly and continues to meet your business needs.
                 </p>
@@ -386,7 +372,7 @@
                     <div class="col-lg-6 col-md-6 col-12">
                       <ul>
                         
-                        <li><a href="training.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Training</a></li>
+                        <li><a href="training-program.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Training</a></li>
                         <li><a href="#testimonials"><i class="fa fa-caret-right" aria-hidden="true"></i>Testimonials</a></li>
                         <li><a href="faq.html"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a></li>
                         <li><a href="contact.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>

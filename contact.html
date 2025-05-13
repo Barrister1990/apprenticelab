@@ -1,74 +1,73 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
-    <head>
-        <!-- Meta Tags -->
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="keywords" content="Apprentice, contact">
-		<meta name="description" content="">
-		<meta name='copyright' content='apprenticelab'>
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		
-		<!-- Title -->
-        <title>Apprentice Lab || Contact Us .</title>
-		
-		<!-- Favicon -->
-		<link rel="icon" href="img/favicon.ico">
-		
-		<!-- Google Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<!-- Nice Select CSS -->
-		<link rel="stylesheet" href="css/nice-select.css">
-		<!-- Font Awesome CSS -->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-		<!-- icofont CSS -->
-        <link rel="stylesheet" href="css/icofont.css">
-		<!-- Slicknav -->
-		<link rel="stylesheet" href="css/slicknav.min.css">
-		<!-- Owl Carousel CSS -->
-        <link rel="stylesheet" href="css/owl-carousel.css">
-		<!-- Datepicker CSS -->
-		<link rel="stylesheet" href="css/datepicker.css">
-		<!-- Animate CSS -->
-        <link rel="stylesheet" href="css/animate.min.css">
-		<!-- Magnific Popup CSS -->
-        <link rel="stylesheet" href="css/magnific-popup.css">
-		
-		<!-- Medipro CSS -->
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="css/responsive.css">
+  <!-- SEO Meta -->
+  <meta name="description" content="Get in touch with Apprentice Lab to learn more about our tech training and digital services." />
+  <meta name="keywords" content="Apprentice Lab, contact, tech training, ICT consultation, web development, app development" />
+  <meta name="author" content="Apprentice Lab" />
+  <meta name="copyright" content="Apprentice Lab" />
 
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-		<script type="text/javascript">
-			(function () {
-				// https://dashboard.emailjs.com/admin/account
-				emailjs.init({
-					publicKey: "AfHzIaEAwHLLMk4dk",
-				});
-			})();
-		</script>
-		<script type="text/javascript">
-			window.onload = function () {
-				document.getElementById('contact-form').addEventListener('submit', function (event) {
-					event.preventDefault();
-					emailjs.sendForm('service_ymvaimi', 'template_d2l8rvg', this)
-						.then(() => {
-							console.log('SUCCESS!');
-							alert("Message sent")
-							// Refresh the page after 3 seconds
-							document.getElementById("contact-form").reset();
-						}, (error) => {
-							console.log('FAILED...', error);
-						});
-				});
-			}
-		</script>
-		
-    </head>
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="Contact Apprentice Lab" />
+  <meta property="og:description" content="Reach out to Apprentice Lab for inquiries, training, partnerships, and ICT consulting." />
+  <meta property="og:image" content="https://www.apprenticelabgh.com/img/android-chrome-192x192.png" />
+  <meta property="og:url" content="https://www.apprenticelabgh.com/contact.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Title -->
+  <title>Contact Us | Apprentice Lab</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.ico" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400,500,600,700,800,900&display=swap" rel="stylesheet" />
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/nice-select.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/icofont.css" />
+  <link rel="stylesheet" href="css/slicknav.min.css" />
+  <link rel="stylesheet" href="css/owl-carousel.css" />
+  <link rel="stylesheet" href="css/datepicker.css" />
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <link rel="stylesheet" href="css/magnific-popup.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <!-- EmailJS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init({
+        publicKey: "AfHzIaEAwHLLMk4dk",
+      });
+    })();
+  </script>
+  <script>
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        emailjs.sendForm('service_ymvaimi', 'template_d2l8rvg', this)
+          .then(() => {
+            alert("Message sent");
+            document.getElementById("contact-form").reset();
+          }, (error) => {
+            console.log('FAILED...', error);
+            alert("Message failed to send. Try again.");
+          });
+      });
+    };
+  </script>
+</head>
+
     <body>
 		
 
@@ -92,7 +91,7 @@
 							<!-- Top Contact -->
 							<ul class="top-contact">
 								<li><i class="fa fa-phone"></i>+1 469 604-1967</li>
-								<li><i class="fa fa-envelope"></i><a href="mailto:support@yourmail.com">info@apprenticelabgh.com</a></li>
+								<li><i class="fa fa-envelope"></i><a href="mailto:info@apprenticelabgh.com">info@apprenticelabgh.com</a></li>
 							</ul>
 							<!-- End Top Contact -->
 						</div>
@@ -108,7 +107,7 @@
 							<div class="col-lg-3 col-md-3 col-12">
 								<!-- Start Logo -->
 								<div class="logo">
-									<a href="index.html"><img src="img/log.png" alt="#"></a>
+									<a href="index.html"><img src="img/log.png" alt="apprentice lab logo"></a>
 								</div>
 								<!-- End Logo -->
 								<!-- Mobile Nav -->
@@ -274,7 +273,7 @@
 					  <ul class="social">
 						
 						<li><a href="https://www.facebook.com/share/T33SZ7oYUC96ZKA2/?mibextid=eQY6cl"><i class="icofont-facebook"></i></a></li>
-						<li><a href="https://twitter.com/apprentice_lab"><i class="icofont-twitter"></i></a></li>
+						<li><a href="https://instagram.com/apprentice_lab"><i class="icofont-instagram"></i></a></li>
 						<li><a href="https://www.linkedin.com/company/apprenticelab"><i class="icofont-linkedin"></i></a></li>
 					  </ul>
 					  <!-- End Social -->
@@ -294,7 +293,7 @@
 						<div class="col-lg-6 col-md-6 col-12">
 						  <ul>
 							
-							<li><a href="training.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Training</a></li>
+							<li><a href="training-program.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Training</a></li>
 							<li><a href="#testimonials"><i class="fa fa-caret-right" aria-hidden="true"></i>Testimonials</a></li>
 							<li><a href="faq.html"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a></li>
 							<li><a href="contact.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>

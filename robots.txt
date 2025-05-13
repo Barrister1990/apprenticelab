@@ -1,0 +1,6 @@
+# robots.txt for https://www.apprenticelabgh.com
+
+User-agent: *
+Disallow:
+
+Sitemap: https://www.apprenticelabgh.com/sitemap.xml

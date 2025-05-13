@@ -1,85 +1,77 @@
 
 <!DOCTYPE html>
 <html lang="zxx">
-  <head>
-    <!-- Meta Tag -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="copyright" content="apprenticelab" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="author" content="Apprentice Lab" />
+  <meta name="description" content="Book your appointment with Apprentice Lab today. Get in touch with our experts for Web Development, Mobile App Development, UX/UI Design, and more." />
+  <meta name="keywords" content="book appointment, appointment form, web development, mobile app development, UX/UI design, Apprentice Lab" />
+  <meta name="copyright" content="Apprentice Lab" />
 
-    <!-- Title -->
-    <title>Apprentice Lab || Appointment</title>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Book an Appointment | Apprentice Lab" />
+  <meta property="og:description" content="Schedule a consultation with our expert team at Apprentice Lab. Get professional guidance on web development, mobile app development, and more." />
+  <meta property="og:image" content="https://www.apprenticelabgh.com/img/android-chrome-192x192.png" />
+  <meta property="og:url" content="https://www.apprenticelabgh.com/appointment.html" />
+  <meta property="og:type" content="website" />
 
-    <!-- Favicon -->
-    <link rel="icon" href="img/favicon.ico">
+  <!-- Title -->
+  <title>Book an Appointment | Apprentice Lab</title>
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.ico" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- Nice Select CSS -->
-    <link rel="stylesheet" href="css/nice-select.css" />
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <!-- icofont CSS -->
-    <link rel="stylesheet" href="css/icofont.css" />
-    <!-- Slicknav -->
-    <link rel="stylesheet" href="css/slicknav.min.css" />
-    <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="css/owl-carousel.css" />
-    <!-- Datepicker CSS -->
-    <link rel="stylesheet" href="css/datepicker.css" />
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="css/animate.min.css" />
-    <!-- Magnific Popup CSS -->
-    <link rel="stylesheet" href="css/magnific-popup.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet" />
 
-    <!-- Mediplus CSS -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/nice-select.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/icofont.css" />
+  <link rel="stylesheet" href="css/slicknav.min.css" />
+  <link rel="stylesheet" href="css/owl-carousel.css" />
+  <link rel="stylesheet" href="css/datepicker.css" />
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <link rel="stylesheet" href="css/magnific-popup.css" />
 
-    <!-- Color CSS -->
-    <link rel="stylesheet" href="css/color/color1.css" />
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/color/color1.css" />
+  <link rel="stylesheet" id="colors" />
 
-    <link rel="stylesheet" id="colors" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- EmailJS Integration -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      // Initialize EmailJS
+      emailjs.init("tBxOJLzoh_r8gBLZ2");
+    })();
+  </script>
   
-		<script type="text/javascript">
-			(function() {
-				// https://dashboard.emailjs.com/admin/account
-				emailjs.init({
-				  publicKey: "tBxOJLzoh_r8gBLZ2",
-				});
-			})();
-		</script>
-		 <script type="text/javascript">
-			window.onload = function() {
-				document.getElementById('contact-form').addEventListener('submit', function(event) {
-					event.preventDefault();
-					emailjs.sendForm('service_9otefbo', 'template_yggw6sv', this)
-						.then(() => {
-							console.log('SUCCESS!');
-						   
-							alert("Appointment Booked, Kindly check your email to continue")
-							document.getElementById("contact-form").reset();
-						}, (error) => {
-							console.log('FAILED...', error);
-							alert("Error Booking Appointment, Please try again in a few minutes")
-						});
-				});
-			}
-		</script>
-  </head>
+  <script type="text/javascript">
+    window.onload = function() {
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        emailjs.sendForm('service_9otefbo', 'template_yggw6sv', this)
+          .then(() => {
+            console.log('SUCCESS!');
+            alert("Appointment Booked! Kindly check your email to continue.");
+            document.getElementById("contact-form").reset();
+          }, (error) => {
+            console.log('FAILED...', error);
+            alert("Error Booking Appointment. Please try again in a few minutes.");
+          });
+      });
+    }
+  </script>
+</head>
+
   <body>
 
     <!-- End Preloader -->
@@ -102,7 +94,7 @@
                         <!-- Top Contact -->
                         <ul class="top-contact">
                             <li><i class="fa fa-phone"></i>+1 469 604-1967</li>
-                            <li><i class="fa fa-envelope"></i><a href="mailto:support@yourmail.com">info@apprenticelabgh.com</a></li>
+                           <li><i class="fa fa-envelope"></i><a href="mailto:info@apprenticelabgh.com">info@apprenticelabgh.com</a></li>
                         </ul>
                         <!-- End Top Contact -->
                     </div>
@@ -118,7 +110,7 @@
                         <div class="col-lg-3 col-md-3 col-12">
                             <!-- Start Logo -->
                             <div class="logo">
-                                <a href="index.html"><img src="img/log.png" alt="#"></a>
+                                <a href="index.html"><img src="img/log.png" alt="apprentice lab logo"></a>
                             </div>
                             <!-- End Logo -->
                             <!-- Mobile Nav -->
@@ -275,7 +267,7 @@
                   <ul class="social">
                     
                     <li><a href="https://www.facebook.com/share/T33SZ7oYUC96ZKA2/?mibextid=eQY6cl"><i class="icofont-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/apprentice_lab"><i class="icofont-twitter"></i></a></li>
+                    <li><a href="https://instagram.com/apprentice_lab"><i class="icofont-instagram"></i></a></li>
                     <li><a href="https://www.linkedin.com/company/apprenticelab"><i class="icofont-linkedin"></i></a></li>
                   </ul>
                   <!-- End Social -->
@@ -295,7 +287,7 @@
                     <div class="col-lg-6 col-md-6 col-12">
                       <ul>
                         
-                        <li><a href="training.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Training</a></li>
+                        <li><a href="training-program.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Training</a></li>
                         <li><a href="#testimonials"><i class="fa fa-caret-right" aria-hidden="true"></i>Testimonials</a></li>
                         <li><a href="faq.html"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a></li>
                         <li><a href="contact.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>
